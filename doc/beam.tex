@@ -1,0 +1,52 @@
+\pagestyle{empty}
+\documentstyle[12pt]{article}
+
+
+
+\begin{document}
+
+\noindent
+{%\Huge
+%\begin{eqnarray*}
+%\begin{equation}
+
+
+
+\noindent
+Probability function $(s=z-z_0)$: 
+\[P(D,z,\sigma_D^{tr},\sigma_z^{tr})= 
+\frac{1}{\sqrt{2\pi}\sigma_D(z)} e^{\frac{D^2}{2\sigma_D(z)^2}}
+\times \frac{1}{\sqrt{2\pi}\sigma_z} e^{\frac{s^2}{2\sigma_z^2}}
+\]
+with:
+
+\[\sigma_{D}(z)= \sqrt{\left(\sigma^{b}(s)\right)^2 +(\sigma_D^{tr})^2} \]
+
+\noindent
+where:\\
+$\sigma^{b}(s) = \sqrt{\epsilon \beta^* \times (1+(s/\beta^*)^2)}$: width of beam for a given z.\\
+$\sigma_D^{tr}$: IP resolution of track. 
+
+\[\sigma_z= \sqrt{(\sigma^{b}_z)^2 +(\sigma_z^{tr})^2} \]
+
+\noindent
+where:\\
+$\sigma^{b}_z$: width of longitudinal profile of the beam.\\
+$\sigma_z^{tr}$: z resolution of track. 
+%\label{bstar}
+%\end{equation}
+
+\vspace{1cm}
+\noindent
+Likelihood Function to be minimized: 
+
+%\[L = \prod_{i}^{Tracks} P(D,z,\sigma_D^{tr},\sigma_z^{tr})\]
+
+\[L= -2.\times  \log\left(\prod_{i}^{Tracks} P(D,z,\sigma_D^{tr},\sigma_z^{tr})\right)\]
+
+%\end{eqnarray*}
+
+}
+
+
+\end{document}
